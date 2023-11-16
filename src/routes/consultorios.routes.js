@@ -5,11 +5,11 @@ const router = Router();
 
 //Rutas
 
-router.get('/consultorios',getConsultorios );
-router.post('/consultorios',createConsultorios );
-router.put('/consultorios/:id', putConsultorio);
-router.delete('/consultorios/:id', deleteConsultorio );
-router.get('/consultorios/:id', getConsultorio );
+router.get('https://ldelregueromartinez.github.io/consultorios',getConsultorios );
+router.post('https://ldelregueromartinez.github.io/consultorios',createConsultorios );
+router.put('https://ldelregueromartinez.github.io/consultorios/:id', putConsultorio);
+router.delete('https://ldelregueromartinez.github.io/consultorios/:id', deleteConsultorio );
+router.get('https://ldelregueromartinez.github.io/consultorios/:id', getConsultorio );
 
 
 export default router;
