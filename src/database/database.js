@@ -11,7 +11,6 @@ export const sequelize = new Sequelize("salute", "fl0user", "DbYg9l4HsFry", {
     dialectOptions: {
         ssl: "require"
       }
-   
-    
+      
 });
 
