@@ -10,4 +10,3 @@ export const sequelize = new Sequelize("salute", "fl0user", "DbYg9l4HsFry", {
     port: 5432,
 });
 
-const sequelize = new Sequelize(process.env.DATABASE_URL);
