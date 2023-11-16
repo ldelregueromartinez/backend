@@ -20,7 +20,7 @@ const port = process.env.PORT || 8080;
 async function main() {
 
     try{
-        await sequelize.sync({force:true});
+        await sequelize.sync({force:false});
         console.log('Conexión a base de datos exitosa');
         app.listen(port);
         
