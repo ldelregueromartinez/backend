@@ -9,7 +9,7 @@ export const sequelize = new Sequelize("salute", "fl0user", "DbYg9l4HsFry", {
     dialect: "postgres",
     port: 5432,
     dialectOptions: {
-        ssl: "require"
+        ssl: "requires"
       }
       
 });
