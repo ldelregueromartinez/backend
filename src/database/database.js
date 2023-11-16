@@ -8,5 +8,10 @@ export const sequelize = new Sequelize("salute", "fl0user", "DbYg9l4HsFry", {
     host: "ep-jolly-bread-41790663.us-east-2.aws.neon.fl0.io",
     dialect: "postgres",
     port: 5432,
+    dialectOptions: {
+        ssl: "require"
+      }
+   
+    
 });
 
