@@ -5,7 +5,7 @@ const router = Router();
 
 //Rutas
 
-router.get('https://create-react-app-beta-snowy.vercel.app//consultorios',getConsultorios );
+router.get('https://create-react-app-beta-snowy.vercel.app/consultorios',getConsultorios );
 router.post('/consultorios',createConsultorios );
 router.put('/consultorios/:id', putConsultorio);
 router.delete('/consultorios/:id', deleteConsultorio );
