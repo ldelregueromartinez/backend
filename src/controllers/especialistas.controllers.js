@@ -135,13 +135,9 @@ const putEspecialista = async (req, res) => {
         } = req.body;
 
 
-        const especialista = Especialistas.findByPk(id);
-        if(
-            !especialista
-        ){
-            return res.status(400).json({
-               error:'El especialista es inválido'
-            });
+        const especialista = await Especialistas.findByPk(id);
+        if(!especialista){
+            return res.status(400).json({error:'El especialista es inválido'});
         };
         especialista.nombre = nombre;
         especialista.apellido = apellido;
