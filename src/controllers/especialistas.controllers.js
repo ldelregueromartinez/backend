@@ -135,11 +135,14 @@ const putEspecialista = async (req, res) => {
         } = req.body;
 
 
-        const especialista = await Choferes.findByPk(id);
-        
-        if (!especialista) {
-            return res.status(400).json({ error: 'El Chofer es inválido' })
-        }
+        const consultorio = Consultorios.findByPk(consultorioId);
+        if(
+            !consultorio
+        ){
+            return res.status(400).json({
+               error:'El consultorio es inválido'
+            });
+        };
         especialista.nombre = nombre;
         especialista.apellido = apellido;
         especialista.direccion = direccion;
