@@ -135,12 +135,12 @@ const putEspecialista = async (req, res) => {
         } = req.body;
 
 
-        const consultorio = Consultorios.findByPk(consultorioId);
+        const especialista = Especialistas.findByPk(especialistaId);
         if(
-            !consultorio
+            !especialista
         ){
             return res.status(400).json({
-               error:'El consultorio es inválido'
+               error:'El especialista es inválido'
             });
         };
         especialista.nombre = nombre;
