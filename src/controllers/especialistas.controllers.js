@@ -135,7 +135,7 @@ const putEspecialista = async (req, res) => {
         } = req.body;
 
 
-        const especialista = Especialistas.findByPk(especialistaId);
+        const especialista = Especialistas.findByPk(id);
         if(
             !especialista
         ){
